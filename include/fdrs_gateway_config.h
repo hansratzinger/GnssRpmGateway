@@ -6,7 +6,7 @@
 #define UNIT_MAC           0x01  // The address of this gateway
 
 #define ESPNOW_NEIGHBOR_1  0x00  // Address of ESP-NOW neighbor #1
-// #define ESPNOW_NEIGHBOR_2  0x02  // Address of ESP-NOW neighbor #2
+#define ESPNOW_NEIGHBOR_2  0x02  // Address of ESP-NOW neighbor #2
 // #define LORA_NEIGHBOR_1    0x00  // Address of LoRa neighbor #1
 // #define LORA_NEIGHBOR_2    0x03  // Address of LoRa neighbor #2
 
@@ -51,22 +51,22 @@
 #define I2C_SCL 15
 
 // OLED -- Displays console debugging messages on an SSD1306 I²C OLED
-///#define USE_OLED    
+// #define USE_OLED    
 #define OLED_HEADER "FDRS"
 #define OLED_PAGE_SECS 30
 #define OLED_RST 16
 
-// RTC - I2C
+// // RTC - I2C
 // #define USE_RTC_DS3231
 // #define RTC_ADDR 0x57
 // #define USE_RTC_DS1307
 // #define RTC_ADDR 0x68
 
 // UART data interface pins (ESP32 only)
-//#define RXD2 14
-//#define TXD2 15
+#define RXD2 14
+#define TXD2 15
 
-//#define USE_LR  // Use ESP-NOW LR mode (ESP32 only)
+#define USE_LR  // Use ESP-NOW LR mode (ESP32 only)
 
 // WiFi and MQTT Credentials  -- These will override the global settings
 //#define WIFI_SSID   "Your SSID"  
