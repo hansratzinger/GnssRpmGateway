@@ -1,6 +1,7 @@
 //  FARM DATA RELAY SYSTEM
 //
 //  GATEWAY CONFIGURATION
+// Gps - RPM - Gateway  Unit 4 (handwritten on ESP32)
 
 //Addresses
 #define UNIT_MAC           0x01  // The address of this gateway
@@ -18,7 +19,7 @@
 
 // Routing
 // Options: sendESPNowNbr(1 or 2); sendESPNowPeers(); sendLoRaNbr(1 or 2); broadcastLoRa(); sendSerial(); sendMQTT();
-#define ESPNOWG_ACT    sendSerial();
+#define ESPNOWG_ACT    sendSerial(); sendESPNowPeers();
 // #define LORAG_ACT      sendSerial();
 #define SERIAL_ACT     sendESPNowNbr(2); sendESPNowPeers(); sendLoRaNbr(2); broadcastLoRa(); 
 #define MQTT_ACT          
