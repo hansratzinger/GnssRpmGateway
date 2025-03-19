@@ -19,7 +19,7 @@
 
 // Routing
 // Options: sendESPNowNbr(1 or 2); sendESPNowPeers(); sendLoRaNbr(1 or 2); broadcastLoRa(); sendSerial(); sendMQTT();
-#define ESPNOWG_ACT    sendSerial(); sendESPNowPeers();
+#define ESPNOWG_ACT    sendSerial(); sendMQTT();
 // #define LORAG_ACT      sendSerial();
 #define SERIAL_ACT     sendESPNowNbr(2); sendESPNowPeers(); sendLoRaNbr(2); broadcastLoRa(); 
 #define MQTT_ACT          
